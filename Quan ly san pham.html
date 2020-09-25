@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quan ly san pham</title>
+</head>
+
+<body>
+<script>
+    let productList = [];
+    function addProduct(productName){
+        productList.push(productName);
+    }
+    function editProduct(productName, position){
+        if(position<0 && position<productList.length)
+        productList[position]=productName;
+    }
+    function deleteProduct(position){
+        productList.splice(position,1);
+    }
+
+
+</script>
+</body>
+</html>

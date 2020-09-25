@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .o {
+            float: left;
+            width: 15px;
+            height: 15px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<div id="bang"></div>
+<script>
+    let string = '';
+    for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 20; i++) {
+            string += '<div class="o"></div>'
+        }
+        string += "<br>"
+    }
+    console.log(string)
+    document.getElementById('bang').innerHTML = string;
+
+    let caro = function (position){
+
+    }
+
+</script>
+</body>
+</html>
